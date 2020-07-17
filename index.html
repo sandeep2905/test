@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LocoBuzz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="wrapper">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav">
+  <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo.png" class="logo" /></a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <span class="navp">Duration </span>
+        <a class="nav-link dropdown-toggle pl-0 pt-0 navp1" href="#" id="navbardrop" data-toggle="dropdown">
+          <span class="mr-3">Today</span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Tommorrow</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 justify-content-end navright">
+      <img src="images/profile.jpg" class="rounded-circle profile" />
+      <span class="profname">Jemmy Lee </span>
+      <span class="icon fa fa-microphone"></span> 
+      <span class="icon1 fa fa-question-circle"></span> 
+      <span class="icon2 fa fa-power-off"></span>
+    </form>
+  </div>
+</nav>
+
+<div class="sidebar">
+  <a class="active" href="#home"> <span class="fa fa-user-circle-o"></span> &nbsp;&nbsp; Accounts</a>
+  <a href="#news"> <span class="fa fa-user"></span> &nbsp;&nbsp; Summary</a>
+  <a href="#contact"> <span class="fa fa-ticket"></span> &nbsp;&nbsp; Tickets</a>
+  <a href="#about"> <span class="fa fa-user-plus"></span> &nbsp;&nbsp; All Mentions</a>
+  <a href="#about"> <span class="fa fa-asterisk"></span> &nbsp;&nbsp; Channels</a>
+  <a href="#about"> <span class="fa fa-users"></span> &nbsp;&nbsp; Reports</a>
+  <a href="#about"> <span class="fa fa-desktop"></span> &nbsp;&nbsp; Add Content</a>
+  <a href="#about"> <span class="fa fa-compass"></span> &nbsp;&nbsp; Campaign</a>
+  <a href="#about"> <span class="fa fa-cogs"></span> &nbsp;&nbsp; Analytics</a>
+</div>
+
+<div class="content">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12 col-12 div1">
+        <i class="fa fa-refresh"></i> &nbsp;
+        <span>Locobuzz</span>
+        <span>/</span>
+        <span>Ticket</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12 col-12">
+        <h4 class="head1">Profile Configuration</h4>
+        <p class="head2">Configure all your channels/profiles, search keywords here</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12 col-12 head1">
+        <!-- Nav pills -->
+        <ul class="nav nav-pills pl-0" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active tabnav" data-toggle="pill" href="#home">Social Profiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabnav" data-toggle="pill" href="#menu1">Keywords</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tabnav" data-toggle="pill" href="#menu2">Ad Accounts</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="home" class="col-md-12 col-sm-12 col-lg-12 col-12 tab-pane p-0 active"><br>
+            <div class="row">
+              <div class="col-md-8 col-sm-8 col-lg-8 col-12">
+                <span>Active Profiles</span>
+                <span>/</span>
+                <span>Total Profiles :</span>
+                <span class="totprof">3</span>
+                <span>/</span>
+                <span>8</span>
+              </div>
+              <div class="col-md-4 col-sm-4 col-lg-4 col-12 addbtn">
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                  <i class="fa fa-plus-circle"></i>  Add Profiles
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Modal body..
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv">
+                <div class="col-md-12 col-sm-12 col-lg-8 col-12 mt-4 mb-4 pb-4 tabdiv1">
+
+                  <div class="col-md-12 col-sm-12 col-lg-12 col-12 mt-4">
+                  <span><img src="images/2.svg" /></span> &nbsp;
+                  <span><img src="images/5.svg" /></span> &nbsp;
+                  <span class="head">Facebook and Instagram Profiles (3)</span>
+                  </div>
+
+                  <div class="row mt-4">
+                  <div class="col-md-12 col-sm-12 col-lg-6 col-12">
+                  <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv2">
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv3">
+                      <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv4">
+                        <div class="row tabdiv5">
+                        <div class="col-md-2 col-sm-2 col-lg-2 col-3">
+                        <img src="images/sbilogo.png" class="img1 rounded-circle" />
+                        </div>
+                        <div class="col-md-10 col-sm-10 col-lg-10 col-9 p-0">
+                        <span class="para">State Bank Of India</span><br/>
+                        <span>Added on : Dec 12 2019, 1:56 PM</span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-lg-12 col-12 pt-2 pb-4 bg-white">
+                        <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12 col-12">
+                        <span class="para1">Last Updated On </span> <span class="para2">: Dec 12 2019, 1:56 PM</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6 col-6 mt-2">
+                          <span class="btn btn-outline-secondary"><i class="fa fa-trash"></i> Delete</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6 col-6 mt-2 text-right">
+                          <span class="btn btn-outline-secondary"><i class="fa fa-pause"></i> Pause</span>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-lg-6 col-12">
+                  <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv2">
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv3">
+                      <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv4">
+                        <div class="row tabdiv5">
+                        <div class="col-md-2 col-sm-2 col-lg-2 col-3">
+                        <img src="images/hdfc.png" class="img1 rounded-circle" />
+                        </div>
+                        <div class="col-md-10 col-sm-10 col-lg-10 col-9 p-0">
+                        <span class="para">HDFC Bank</span><br/>
+                        <span>Added on : Dec 12 2019, 1:56 PM</span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-lg-12 col-12 pt-2 pb-4 bg-white">
+                        <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12 col-12">
+                        <span class="para1">Last Updated On </span> <span class="para2">: Dec 12 2019, 1:56 PM</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6 col-6 mt-2">
+                          <span class="btn btn-outline-secondary"><i class="fa fa-trash"></i> Delete</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6 col-6 mt-2 text-right">
+                          <span class="btn btn-outline-secondary"><i class="fa fa-pause"></i> Pause</span>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-lg-6 col-12">
+                  <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv2">
+                    <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv3">
+                      <div class="col-md-12 col-sm-12 col-lg-12 col-12 tabdiv4">
+                        <div class="row tabdiv5">
+                        <div class="col-md-2 col-sm-2 col-lg-2 col-3">
+                        <img src="images/sbilogo.png" class="img1 rounded-circle" />
+                        </div>
+                        <div class="col-md-10 col-sm-10 col-lg-10 col-9 p-0">
+                        <span class="para">State Bank Of India</span><br/>
+                        <span>Added on : Dec 12 2019, 1:56 PM</span>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-lg-12 col-12 pt-2 pb-4 bg-white">
+                        <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12 col-12">
+                        <span class="para1">Last Updated On </span> <span class="para2">: Dec 12 2019, 1:56 PM</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6 col-6 mt-2">
+                          <span class="btn btn-outline-secondary"><i class="fa fa-trash"></i> Delete</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6 col-6 mt-2 text-right">
+                          <span class="btn btn-outline-secondary"><i class="fa fa-pause"></i> Pause</span>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="menu1" class="col-md-12 col-sm-12 col-xs-12 tab-pane fade"><br>
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="menu2" class="col-md-12 col-sm-12 col-xs-12 tab-pane fade"><br>
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
